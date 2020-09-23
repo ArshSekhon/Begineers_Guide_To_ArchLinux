@@ -1,4 +1,4 @@
-# Part 1: Installing Arch with LVM
+# Part 1: Installing Base Arch with LVM
 
 
 ### **Step 1: Set the keyboard layout**
