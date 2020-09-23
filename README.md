@@ -1,5 +1,14 @@
 # A Begineer's Guide to Arch Linux 🐧
 
+## Screenshots
+
+![](./imgs/landscape_desktop.png)
+![](./imgs/landscape_vscode_terminal.png)
+![](./imgs/rofi_main.png)
+|                                           |               |
+|-------------------------------------------|----------------|
+| ![](./imgs/portrait_vs_code_terminal.png) | ![](./imgs/rofi_power.png) |
+
 ## Part 1: Installing Base Arch with LVM
 
 ### **Step 1: Set the keyboard layout**
