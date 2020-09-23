@@ -292,7 +292,7 @@ reboot
 ```
 Now finally remove installation media.
 
-### Step 21: Celebrate
-This is the time to give yourself a pat on the back. Now you should have a functional install of Arch Linux on your Computer. 🎉✨🎉
+### Step 21: Celebrate  🎉✨🎉
+This is the time to give yourself a pat on the back. Now you should have a functional install of Arch Linux on your Computer. 
 
 Things might not be as pretty as you expected as you would be welcomed just by a tty, but trust me we'll get there.
