@@ -16,7 +16,7 @@ Check if you have internet access by executing the following command:
 
 `ping -c 4 archlinux.org`
 
-If the server is unreachable there are probably some issues. If you face connectivity issue or f you want to install Arch using your WiFi please follow [ArchWiki: Connect to the internet](https://wiki.archlinux.org/index.php/installation_guide#Connect_to_the_internet)
+If the server is unreachable there are probably some issues. If you face connectivity issue or if you want to install Arch using your WiFi please follow [ArchWiki: Connect to the internet](https://wiki.archlinux.org/index.php/installation_guide#Connect_to_the_internet)
 
 ### **Step 3: Ensure the Time and date is correct**
 Before proceeding with the installation we need to make sure that the date and time on our system is correct. This is important as we'll need to download stuff from the internet for the install and wrong date/time can cause issues with the same.
