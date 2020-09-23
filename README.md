@@ -1,7 +1,6 @@
 # A Begineer's Guide to Arch Linux 🐧
 
 ## Part 1: Installing Base Arch with LVM
-<br/>
 
 ### **Step 1: Set the keyboard layout**
 Usually if you are using an English (US) keyboard you would not need to do this. But if you need to change the keyboard, you can find the available keymmaps using the following command:
@@ -300,10 +299,8 @@ This is the time to give yourself a pat on the back. Now you should have a funct
 Things might not be as pretty as you expected as you would be welcomed just by a tty, but trust me we'll get there.
 
 <hr/>
-<br/>
 
 ## Part 2: Installing xorg, i3-wm and other GUI stuff
-<br/>
 
 ### Step 1: Make sure you have a working Internet Connection
 Check if you have internet access by executing the following command:
