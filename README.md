@@ -456,13 +456,18 @@ Things still might not be as pretty as you expected yet, but trust me we'll get 
 <hr/>
 
 
-### Part 3: ✨💫💅 Ricing things up (incomplete) 💅💫✨
+### Part 3: ✨💫💅 Ricing things up (work in progress) 💅💫✨
 
 ### Prep: Installing icons and themes
 
 ```
 sudo pacman -S lxappearance materia-gtk-theme
 yay -S plata-theme paper-icon-theme-git flattr-icon-theme
+
+# clone dotfiles 
+git clone https://github.com/ArshSekhon/dotfiles.git ~/dotfiles
+
+sudo pacman -S stow
 ```
 
 Now you can pick and apply your favorite theme to the distro by launching `lxappearance` from the terminal.
@@ -475,6 +480,8 @@ For my install I like using `Materia - Dark` for the widgets and `Paper` for the
 yay -S picom-git
 
 # copy the config files
+cd ~/dotfiles
+stow -Svt ~ picom
 
 # test picom by executing
 picom --experimental-backends --config ~/.config/picom.conf
@@ -486,7 +493,9 @@ picom --experimental-backends --config ~/.config/picom.conf
 sudo pacman -S bc jq
 yay -S ttf-weather-icons zscroll-git
 
-# copy the polybar config
+# copy the config files
+cd ~/dotfiles
+stow -Svt ~ polybar
 
 # test polybar by executing:
 ~/.config/polybar/launch.sh
@@ -496,57 +505,77 @@ yay -S ttf-weather-icons zscroll-git
 
 Copy the dot files
 ```
+# delete the default config
+rm -rf ~/.config/i3
+# copy the config files
+cd ~/dotfiles
+stow -Svt ~ i3
+
 yay -S i3-gaps-rounded-git
 ```
 
 ### Step 4: Configuring rofi
 ```
 yay -S rofi
+
+# copy the config files
+cd ~/dotfiles
+stow -Svt ~ rofi
 ```
 
 ### Step 5: Configuring alacritty
 ```
-use alacritty.yml
+# copy the config files
+cd ~/dotfiles
+stow -Svt ~ alacritty
 
 yay -S noto-fonts-emoji
 ```
 
-### Step 6: Configuring vim and neovim
+### Step 6: Configuring dunst
+```
+yay -S dunst-git
 
-### Step 7: Configuring dunst
+# copy the config files
+cd ~/dotfiles
+stow -Svt ~ dunst
+```
 
-
-### Step 8: Configuring VSCode
-
-### Step 9: Configuring fish
+### Step 7: Configuring fish
 ```
 sudo pacman -S fish
 curl -L https://get.oh-my.fish | fish
-
 ```
 
+### Step 8: Configuring zsh
 ```
 sudo pacman -S zsh
  
 #install ohmyzsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
-#edit .zshrc and 
+  
+# copy the config files
+cd ~/dotfiles
+stow -Svt ~ zsh
 ```
 
-### Step 9: Customizing zsh with custom prompt
 
-### Step 10: Setting up a lockscreen
+### Step -: Configuring vim and neovim
+
+
+### Step -: Configuring VSCode
+
+
+
+### Step -: Customizing zsh with custom prompt
+
+### Step -: Setting up a lockscreen
 I would use light-dm as locker
 
 ```
 dm-tool lock
 ```
 
-### Step 11: Customizing lightdm
+### Step -: Customizing lightdm
 
-### Step 12: Configuring tmux  
+### Step -: Configuring tmux  
